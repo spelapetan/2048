@@ -1,4 +1,5 @@
 import random
+import copy
 
 class Matrix:
     def __init__(self, vrstica=4, stolpec=4):
@@ -162,9 +163,7 @@ class Matrix:
         return self.matrika[i][j]
 
     def shrani_zgodovino(self):
-        self.stara_matrika = []
-        for vrstica in self.matrika:
-            self.stara_matrika.append(vrstica)
+        self.stara_matrika = copy.deepcopy(self.matrika)
 
     def prejsnja_matrika(self):
         self.matrika = self.stara_matrika
