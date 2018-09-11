@@ -18,6 +18,8 @@ class IgralnaPlosca:
         spodaj.pack()
         self.okvir_matrike.pack()
 
+        self.okno.title('2048')
+
         self.pozdrav = tk.Label(zgoraj, text='Pozdravljeni v igrici 2048!', font=("Helvetica", 15, "bold"))
         self.stevilo_potez = tk.Label(spodaj, text='0', font=("Helvetica", 15, "bold"))
         self.nazaj = tk.Button(spodaj, text='NAZAJ', font=("Helvetica", 15, "bold"), command=self.razveljavi)
